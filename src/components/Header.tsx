@@ -67,18 +67,27 @@ const Header = () => {
             exit={{ opacity: 0, x: 200 }}
             className="flex items-center gap-24 "
           >
-            <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Home
-            </li>
-            <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Menu
-            </li>
-            <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              About Us
-            </li>
+            <Link to="/">
+              <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
+                Home
+              </li>
+            </Link>
+            <Link to="/menu">
+              <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
+                Menu
+              </li>
+            </Link>
+            <Link to="/about">
+              <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
+                About Us
+              </li>
+            </Link>
+
+            <Link to="/service">
             <li className="text-lg text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               Service
             </li>
+            </Link>
           </motion.ul>
 
           <div
